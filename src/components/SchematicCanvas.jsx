@@ -10,7 +10,7 @@ export default function SchematicCanvas({ stage }) {
 
   // ======== CHIP / CANVAS CONSTANTS ========
   const CHIP_WIDTH = 800;
-  const CHIP_HEIGHT = 600;
+  const CHIP_HEIGHT = 500;
   const CHIP_RADIUS = 16;
 
   const canvasWidth = CHIP_WIDTH;
@@ -263,6 +263,9 @@ export default function SchematicCanvas({ stage }) {
         { variant: 1, x: -0.55, y:  0.55, minStage: 9 },  // B1
         { variant: 0, x: -0.45, y:  0.30, minStage: 10 }, // B2
         { variant: 1, x: -0.31, y: -0.75, minStage: 10 }, // B3
+        { variant: 1, x: -0.60, y:  -0.87, minStage: 9 },
+        { variant: 0, x: -0.55, y:  -0.17, minStage: 9 },
+        { variant: 1, x: 0.15, y:  0.90, minStage: 9 },
       ];
 
       // --- label boxes ---
@@ -481,6 +484,52 @@ export default function SchematicCanvas({ stage }) {
             [-0.20, -0.75],
           ],
         },
+          {
+          minStage: 9,
+          color: "#10b981",
+          pts: [
+            [-0.15, 0.55],
+            [-0.15, 0.90],
+            [0.15, 0.90],
+          ],
+        },
+         {
+          minStage: 9,
+          color: "#10b981",
+          pts: [
+            [0.24, 0.90],
+            [0.45, 0.90],
+            [0.45, 0.55],
+            
+          ],
+        },
+        {
+          minStage: 3,
+          color: "#10b981",
+          pts: [
+            [-0.75, -0.45],
+            [-0.75, -0.17],
+            [-0.54, -0.17],
+          ],
+        },
+         {
+          minStage: 5,
+          color: "#10b981",
+          pts: [
+            [-0.75, -0.45],
+            [-0.75, -0.87],
+            [-0.65, -0.87],
+          ],
+        },
+         {
+          minStage: 3,
+          color: "#10b981",
+          pts: [
+            [-0.55, -0.87],
+            [-0.37, -0.87],
+            [-0.37, -0.76],
+          ],
+        },
 
       ];
 
@@ -568,7 +617,7 @@ export default function SchematicCanvas({ stage }) {
       onWheel={handleWheel}
       className="
         block
-        shadow-[0_0_100px_rgba(16,185,129,0.6)]
+        shadow-[0_0_20px_rgba(16,185,129,0.6)]
         bg-transparent
         cursor-crosshair
       "

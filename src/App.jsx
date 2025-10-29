@@ -15,7 +15,7 @@ export default function App() {
       {/* main interactive area below the header */}
       <main className="flex-1 overflow-x-hidden overflow-y-auto py-8 sm:py-12">
         {showSteps ? (
-          <Steps />
+           <Steps onBackToMain={() => setShowSteps(false)} />
         ) : (
           <MainFirst startSteps={() => setShowSteps(true)} />
         )}
