@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* basic body styling / smooth scrolling */
+body {
+  @apply bg-chip-bg text-white antialiased;
+}
+
+/* hide horizontal scrollbars to avoid grey bar */
+html, body {
+  overflow-x: hidden;
+}
