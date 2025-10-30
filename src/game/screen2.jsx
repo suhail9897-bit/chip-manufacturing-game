@@ -3,7 +3,6 @@ import MaleTeacherGif from "../assets/male_teacher.gif"; // teacher
 import ThoughtBubbleImg from "../assets/thought1.png";    // bubble
 import StartGif from "../assets/start.gif";               // START HERE
 import BackArrowGif from "../assets/back_arrow.gif";      // NEW back arrow
-import Step2 from "./step2.jsx";
 import Screen3 from "./screen3.jsx";
 
 export default function Screen2({ onBack }) {
